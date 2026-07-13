@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarthi Exim India — Spices for the World Trade</title>
+<meta name="description" content="Sarthi Exim India exports export-grade chilli, turmeric, pepper, cardamom, garlic and onion to buyers across the globe. Request a quote today.">
+<link rel="icon" href="/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+
+<!-- GLOBAL BACKGROUND MESH -->
+<div id="bg-mesh" aria-hidden="true">
+  <div class="mesh-blob blob-1"></div>
+  <div class="mesh-blob blob-2"></div>
+  <div class="mesh-blob blob-3"></div>
+  <div class="mesh-grid"></div>
+</div>
+<!-- LOADING SCREEN -->
+<div id="loader" aria-hidden="true">
+  <img src="/logo_nobg.png" alt="Sarthi Exim India Logo" class="loader-logo">
+  <div class="loader-line"><span></span></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- CUSTOM CURSOR (desktop only, CSS hides on touch) -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- COOKIE CONSENT -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie notice">
+  <p>This site uses cookies to keep your quote requests and preferences working smoothly. <a href="#" id="cookie-learn">Learn more</a></p>
+  <div class="cookie-actions">
+    <button class="btn btn-ghost btn-sm" id="cookie-decline">Decline</button>
+    <button class="btn btn-gold btn-sm" id="cookie-accept">Accept</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <nav class="nav-wrap">
+    <a href="#home" class="brand">
+      <img src="/logo_nobg.png" alt="Sarthi Exim India Logo" class="brand-logo">
+      <span class="brand-name">Sarthi Exim <em>India</em></span>
+    </a>
+    <button id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#products" class="nav-link">Products</a></li>
+      <li><a href="#profile" class="nav-link">Company Profile</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#global" class="nav-link">Global Reach</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#rfq" class="btn btn-gold btn-sm nav-cta">Request Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg" id="hero-parallax" aria-hidden="true">
+    <div class="parallax-layer layer-1" data-speed="0.02"></div>
+    <div class="parallax-layer layer-2" data-speed="0.05"></div>
+    <div class="parallax-layer layer-3" data-speed="0.09"></div>
+    <div class="hero-grain"></div>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow" data-reveal>MANIFEST NO. 01 — ORIGIN, INDIA</p>
+    <h1 id="hero-headline">Sourced at origin.<br>Trusted at every port.</h1>
+    <p class="hero-sub" data-reveal>Sarthi Exim India ships export-grade chilli, turmeric, pepper, cardamom, garlic and onion from Maharashtra to buyers across the Middle East, Europe, Southeast Asia and beyond — lab-tested, properly documented, and packed to travel.</p>
+    <div class="hero-ctas" data-reveal>
+      <a href="#products" class="btn btn-gold">Explore Products</a>
+      <a href="#rfq" class="btn btn-outline">Request a Quote</a>
+      <a href="#profile" class="btn btn-text">Download Company Profile →</a>
+    </div>
+  </div>
+  <a href="#trust" class="hero-scroll" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- TRUST STRIP -->
+<section id="trust" class="trust-strip">
+  <div class="trust-track">
+    <div class="trust-track-inner" id="trust-track-inner">
+      <!-- duplicated via JS for seamless loop -->
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 02 — ABOUT THE HOUSE</p>
+    <h2>A trading house built on the paper trail<br>as much as the produce.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-copy" data-reveal>
+      <p>Sarthi Exim India is a merchant-exporter working directly with growers and processing units across India to bring six core spice and produce lines to international buyers. Every consignment moves with full documentation — quality certificates, phytosanitary papers, and commercial invoices — so it clears customs without surprises.</p>
+      <div class="about-cols">
+        <div>
+          <h3>Mission</h3>
+          <p>Give overseas buyers a dependable, well-documented source of Indian spices — the kind of supplier you don't have to double-check.</p>
+        </div>
+        <div>
+          <h3>Vision</h3>
+          <p>To be the first call for B2B spice buyers across the Gulf, Europe and Southeast Asia looking for consistent grade and on-time shipping.</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-timeline" data-reveal>
+      <h3>Company Timeline</h3>
+      <ol class="timeline">
+        <li><span class="t-year">Y1</span><span class="t-text">Founded in Mira Road, Maharashtra, sourcing red chilli and turmeric for domestic trade.</span></li>
+        <li><span class="t-year">Y2</span><span class="t-text">First export consignment cleared IEC and shipped to a Gulf buyer.</span></li>
+        <li><span class="t-year">Y3</span><span class="t-text">Added pepper, cardamom, garlic and onion lines; registered with Spices Board.</span></li>
+        <li><span class="t-year">Y4</span><span class="t-text">Built recurring buyer relationships across multiple export corridors.</span></li>
+        <li><span class="t-year">Today</span><span class="t-text">Operating as a full-line merchant exporter with in-house documentation and QC.</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="why-choose" data-reveal>
+    <h3>Why buyers choose Sarthi Exim India</h3>
+    <div class="why-grid">
+      <div class="why-card"><span class="why-num">01</span><h4>Lab-tested lots</h4><p>Every batch checked for moisture, purity and pesticide residue before it's packed.</p></div>
+      <div class="why-card"><span class="why-num">02</span><h4>Documentation-first</h4><p>IEC, GST, FSSAI, Spices Board RCMC and FIEO papers ready for every shipment.</p></div>
+      <div class="why-card"><span class="why-num">03</span><h4>Flexible order sizes</h4><p>Sample orders through full container loads (FCL), with MOQ stated upfront per product.</p></div>
+      <div class="why-card"><span class="why-num">04</span><h4>Direct communication</h4><p>One point of contact from quote to bill of lading — no reseller layers.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section products">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 03 — PRODUCE LINES</p>
+    <h2>Six lines. One quality standard.</h2>
+  </div>
+  <div class="product-grid" id="product-grid"><!-- injected by JS --></div>
+</section>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div id="product-modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="modal-body" id="modal-body"><!-- injected by JS --></div>
+  </div>
+</div>
+
+<!-- COMPANY PROFILE -->
+<section id="profile" class="section profile">
+  <div class="profile-inner">
+    <div class="profile-copy" data-reveal>
+      <p class="eyebrow">MANIFEST NO. 04 — COMPANY PROFILE</p>
+      <h2>Everything a buyer's compliance team asks for, in one PDF.</h2>
+      <p>Our company profile covers registration details, product range, packaging capability, quality process and past export corridors — built for procurement teams who need it on file before the first PO.</p>
+      <a href="#" class="btn btn-gold" id="download-profile">Download Company Profile (PDF)</a>
+    </div>
+    <div class="profile-card" data-reveal aria-hidden="true">
+      <div class="profile-doc">
+        <div class="profile-doc-head">
+          <span>SARTHI EXIM INDIA</span>
+          <span>COMPANY PROFILE</span>
+        </div>
+        <div class="profile-doc-lines">
+          <span></span><span></span><span></span><span class="short"></span>
+          <span></span><span class="short"></span><span></span><span></span>
+        </div>
+        <div class="profile-doc-stamp">VERIFIED<br>EXPORTER</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section certificates">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 05 — REGISTRATIONS ON FILE</p>
+    <h2>Every number a customs officer or buyer will ask for.</h2>
+  </div>
+  <div class="cert-grid" id="cert-grid"><!-- injected by JS --></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section gallery">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 06 — FROM FIELD TO CONTAINER</p>
+    <h2>Gallery</h2>
+  </div>
+  <div class="gallery-tabs" id="gallery-tabs"><!-- injected by JS --></div>
+  <div class="gallery-grid" id="gallery-grid"><!-- injected by JS --></div>
+</section>
+
+<!-- EXPORT PROCESS -->
+<section id="process" class="section process">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 07 — HOW A SHIPMENT MOVES</p>
+    <h2>Export process</h2>
+  </div>
+  <ol class="process-track" id="process-track"><!-- injected by JS --></ol>
+</section>
+
+<!-- GLOBAL PRESENCE -->
+<section id="global" class="section global">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 08 — SHIPPING LEDGER</p>
+    <h2>Where our containers land.</h2>
+  </div>
+  <div class="global-grid">
+    <div class="global-stats" id="global-stats"><!-- injected by JS --></div>
+    <div class="ledger" data-reveal>
+      <div class="ledger-head">
+        <span>ORIGIN</span><span>DESTINATION</span><span>ROUTE</span><span>TRANSIT</span>
+      </div>
+      <div id="ledger-rows"><!-- injected by JS --></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section testimonials">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 09 — BUYER NOTES</p>
+    <h2>What buyers say after the first container.</h2>
+  </div>
+  <div class="testi-slider" id="testi-slider">
+    <div class="testi-track" id="testi-track"><!-- injected by JS --></div>
+    <div class="testi-controls">
+      <button id="testi-prev" aria-label="Previous testimonial">←</button>
+      <div class="testi-dots" id="testi-dots"></div>
+      <button id="testi-next" aria-label="Next testimonial">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- RFQ / CONTACT -->
+<section id="rfq" class="section rfq">
+  <div class="section-head">
+    <p class="eyebrow">MANIFEST NO. 10 — REQUEST A QUOTE</p>
+    <h2>Tell us what you need. We'll quote it properly.</h2>
+  </div>
+  <form id="rfq-form" class="rfq-form" novalidate>
+    <div class="form-row">
+      <div class="field">
+        <label for="rfq-name">Full name *</label>
+        <input id="rfq-name" name="name" type="text" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="rfq-company">Company *</label>
+        <input id="rfq-company" name="company" type="text" required>
+        <span class="field-error"></span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="field">
+        <label for="rfq-email">Email *</label>
+        <input id="rfq-email" name="email" type="email" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="rfq-phone">Phone / WhatsApp *</label>
+        <input id="rfq-phone" name="phone" type="tel" required>
+        <span class="field-error"></span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="field">
+        <label for="rfq-country">Country *</label>
+        <input id="rfq-country" name="country" type="text" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="rfq-product">Product</label>
+        <select id="rfq-product" name="product">
+          <option value="">General / bulk inquiry</option>
+          <option>Dry Red Chilli (Teja S17)</option>
+          <option>Turmeric Finger</option>
+          <option>Black Pepper</option>
+          <option>Green Cardamom</option>
+          <option>Garlic</option>
+          <option>Onion</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="field">
+        <label for="rfq-qty">Order quantity</label>
+        <input id="rfq-qty" name="qty" type="text" placeholder="e.g. 1 FCL / 5000 kg">
+      </div>
+      <div class="field">
+        <label for="rfq-file">Attach requirement sheet</label>
+        <input id="rfq-file" name="file" type="file">
+      </div>
+    </div>
+    <div class="field field-full">
+      <label for="rfq-message">Message *</label>
+      <textarea id="rfq-message" name="message" rows="4" required></textarea>
+      <span class="field-error"></span>
+    </div>
+    <label class="field-check">
+      <input type="checkbox" id="rfq-recaptcha-stub"> I confirm I'm not a robot
+    </label>
+    <button type="submit" class="btn btn-gold btn-lg">Submit Request for Quote</button>
+    <p class="form-note">This form is front-end only in this build — see the note in the footer for wiring it to email / CRM.</p>
+  </form>
+
+  <div class="contact-grid">
+    <div class="contact-card" data-reveal>
+      <h3>Direct contact</h3>
+      <ul class="contact-list">
+        <li><strong>Email</strong><span>sales@sarthieximindia.com</span></li>
+        <li><strong>Phone</strong><span>+91 97694 96113</span></li>
+        <li><strong>Business hours</strong><span>Mon–Sat, 10:00–19:00 IST</span></li>
+        <li><strong>Address</strong><span>A-704, New Poonam Green, Pleasant Park, Mira Road East, Maharashtra, India</span></li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="Facebook">fb</a>
+      </div>
+    </div>
+    <div class="map-card" data-reveal>
+      <iframe title="Sarthi Exim India location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=A-704,+New+Poonam+Green,+Pleasant+Park,+Mira+Road+East,+Maharashtra,+India&output=embed">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- THANK YOU OVERLAY -->
+<div id="thankyou" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel thankyou-panel" role="dialog" aria-modal="true">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <div class="stamp-anim">CLEARED</div>
+    <h3>Your request has been logged.</h3>
+    <p>A member of our export desk will get back to you within one business day with pricing and lead time.</p>
+    <a href="#home" class="btn btn-gold" data-close>Back to homepage</a>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#home" class="brand footer-brand-link">
+        <img src="/logo.png" alt="Sarthi Exim India Logo" class="brand-logo">
+        <span class="brand-name">Sarthi Exim <em>India</em></span>
+      </a>
+      <p style="margin-top: 15px;">Merchant exporter of Indian spices and produce, shipping worldwide from Maharashtra, India.</p>
+      <form class="newsletter" id="newsletter-form">
+        <label for="newsletter-email">Get sourcing updates</label>
+        <div class="newsletter-row">
+          <input id="newsletter-email" type="email" placeholder="you@company.com" required>
+          <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a>
+        <a href="#profile">Company Profile</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Trade</h4>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#process">Export Process</a>
+        <a href="#rfq">Request a Quote</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+      <p>© <span id="year"></span> Sarthi Exim India. All rights reserved.</p>
+      <p class="build-note">Front-end build — payment gateway, RFQ backend and CMS wiring covered separately.</p>
+    </div>
+    <div class="footer-social" style="display: flex; gap: 16px; align-items: center; justify-content: flex-end;">
+      <a href="https://www.facebook.com/share/1M75NZaTQd/" target="_blank" rel="noopener" aria-label="Facebook" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+      <a href="https://www.instagram.com/sarthi_exim_india?igsh=MXJlbHlhcGY5cXZyZw==" target="_blank" rel="noopener" aria-label="Instagram" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25zM12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+      <a href="https://www.linkedin.com/in/sagar-waghela-a94268389?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+      <a href="https://wa.me/919769496113" target="_blank" rel="noopener" aria-label="WhatsApp" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg></a>
+      <a href="https://www.indiamart.com/sarthithane-maharashtra/" target="_blank" rel="noopener" aria-label="IndiaMart" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-10-2h4v2h-4V4zm10 15H4V8h16v11z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a id="whatsapp-float" href="https://wa.me/919769496113?text=Hello%20Sarthi%20Exim%20India%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20your%20quotation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+    <path d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+  </svg>
+</a>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Back to top">↑</button>
+
+<script type="module" src="/src/app.js"></script>
+</body>
+</html>
