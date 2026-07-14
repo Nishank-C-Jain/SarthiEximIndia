@@ -437,7 +437,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
-    fetch("https://formsubmit.co/ajax/sales@sarthieximindia.com", {
+    fetch("https://formsubmit.co/ajax/gaurviverma0108@gmail.com", {
       method: "POST",
       body: new FormData(rfqForm)
     })
@@ -456,7 +456,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(error => {
         submitBtn.disabled = false;
         submitBtn.textContent = originalBtnText;
-        alert("There was an error sending your quote request. Please try again or email us directly at sales@sarthieximindia.com.");
+        alert("There was an error sending your quote request. Please try again or email us directly at gaurviverma0108@gmail.com.");
         console.error("FormSubmit Error:", error);
       });
   });
