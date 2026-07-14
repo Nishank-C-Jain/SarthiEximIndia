@@ -437,7 +437,7 @@ p{ margin:0; }
   transition:border-color .25s;
 }
 .field input:focus,.field select:focus,.field textarea:focus{ outline:none; border-color:var(--gold); }
-.field.invalid input,.field.invalid textarea{ border-color:var(--maroon); }
+.field.invalid input,.field.invalid select,.field.invalid textarea{ border-color:var(--maroon); }
 .field-error{ font-size:0.78rem; color:var(--maroon); min-height:1em; }
 .field-check{ display:flex; align-items:center; gap:10px; font-size:0.85rem; color:var(--ink-70); }
 .form-note{ font-size:0.78rem; color:var(--ink-70); margin-top:-6px; }
