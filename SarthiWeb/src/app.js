@@ -432,11 +432,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     if (!valid) return;
 
-    // BACKEND HOOK: replace with
-    // fetch('/api/inquiries', { method:'POST', body: new FormData(rfqForm) })
-    //   .then(r => r.json()).then(() => showThankYou()).catch(showError);
-    showThankYou();
-    rfqForm.reset();
+    const submitBtn = rfqForm.querySelector("button[type='submit']");
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    fetch("https://formsubmit.co/ajax/sales@sarthieximindia.com", {
+      method: "POST",
+      body: new FormData(rfqForm)
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Form submission failed");
+        }
+        return response.json();
+      })
+      .then(data => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        showThankYou();
+        rfqForm.reset();
+      })
+      .catch(error => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        alert("There was an error sending your quote request. Please try again or email us directly at sales@sarthieximindia.com.");
+        console.error("FormSubmit Error:", error);
+      });
   });
 
   function showThankYou() {
