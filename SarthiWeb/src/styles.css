@@ -442,6 +442,10 @@ p{ margin:0; }
 .field-check{ display:flex; align-items:center; gap:10px; font-size:0.85rem; color:var(--ink-70); }
 .form-note{ font-size:0.78rem; color:var(--ink-70); margin-top:-6px; }
 
+.phone-input-group{ display:flex; gap:10px; }
+.phone-input-group select{ width:120px; flex-shrink:0; }
+.phone-input-group input{ flex:1; }
+
 .contact-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:26px; }
 .contact-card{ 
   background:var(--glass-bg); backdrop-filter:blur(10px); color:var(--ink); 

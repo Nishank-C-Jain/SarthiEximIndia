@@ -411,15 +411,24 @@ document.addEventListener("DOMContentLoaded", () => {
   rfqForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let valid = true;
+    rfqForm.querySelectorAll(".field").forEach(field => {
+      field.classList.remove("invalid");
+      const errorEl = field.querySelector(".field-error");
+      if (errorEl) errorEl.textContent = "";
+    });
+
     rfqForm.querySelectorAll("[required]").forEach(input => {
       const field = input.closest(".field");
       const errorEl = field.querySelector(".field-error");
       let msg = "";
       if (!input.value.trim()) msg = "This field is required.";
       else if (input.type === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) msg = "Enter a valid email address.";
-      field.classList.toggle("invalid", !!msg);
-      if (errorEl) errorEl.textContent = msg;
-      if (msg) valid = false;
+      
+      if (msg) {
+        field.classList.add("invalid");
+        if (errorEl) errorEl.textContent = msg;
+        valid = false;
+      }
     });
     if (!valid) return;
 
