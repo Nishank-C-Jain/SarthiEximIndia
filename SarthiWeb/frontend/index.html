@@ -1,829 +1,887 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarthi Exim India — Spices for the World Trade</title>
-<meta name="description" content="Sarthi Exim India exports export-grade chilli, turmeric, pepper, cardamom, garlic and onion to buyers across the globe. Request a quote today.">
-<link rel="icon" href="/logo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/src/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarthi Exim India — Spices for the World Trade</title>
+  <meta name="description"
+    content="Sarthi Exim India exports export-grade chilli, turmeric, pepper, cardamom, garlic and onion to buyers across the globe. Request a quote today.">
+  <link rel="icon" href="/logo_icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles.css">
 </head>
+
 <body>
 
-<!-- GLOBAL BACKGROUND MESH -->
-<div id="bg-mesh" aria-hidden="true">
-  <div class="mesh-blob blob-1"></div>
-  <div class="mesh-blob blob-2"></div>
-  <div class="mesh-blob blob-3"></div>
-  <div class="mesh-grid"></div>
-</div>
-<!-- LOADING SCREEN -->
-<div id="loader" aria-hidden="true">
-  <img src="/logo_nobg.png" alt="Sarthi Exim India Logo" class="loader-logo">
-  <div class="loader-line"><span></span></div>
-</div>
-
-<!-- SCROLL PROGRESS -->
-<div id="scroll-progress"></div>
-
-<!-- CUSTOM CURSOR (desktop only, CSS hides on touch) -->
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
-
-<!-- COOKIE CONSENT -->
-<div id="cookie-banner" role="dialog" aria-label="Cookie notice">
-  <p>This site uses cookies to keep your quote requests and preferences working smoothly. <a href="#" id="cookie-learn">Learn more</a></p>
-  <div class="cookie-actions">
-    <button class="btn btn-ghost btn-sm" id="cookie-decline">Decline</button>
-    <button class="btn btn-gold btn-sm" id="cookie-accept">Accept</button>
+  <!-- GLOBAL BACKGROUND MESH -->
+  <div id="bg-mesh" aria-hidden="true">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+    <div class="mesh-grid"></div>
   </div>
-</div>
-
-<!-- NAVBAR -->
-<header id="navbar">
-  <nav class="nav-wrap">
-    <a href="#home" class="brand">
-      <img src="/logo_nobg.png" alt="Sarthi Exim India Logo" class="brand-logo">
-      <div class="brand-text">
-        <span class="brand-name">Sarthi Exim <em>India</em></span>
-        <span class="brand-slogan">Exporting Excellence, Building Trust</span>
-      </div>
-    </a>
-    <button id="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul id="nav-links">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#products" class="nav-link">Products</a></li>
-      <li><a href="#profile" class="nav-link">Company Profile</a></li>
-      <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#gallery" class="nav-link">Gallery</a></li>
-      <li><a href="#global" class="nav-link">Global Reach</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-      <li><a href="#rfq" class="btn btn-gold btn-sm nav-cta">Request Quote</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-bg" id="hero-parallax" aria-hidden="true">
-    <div class="parallax-layer layer-1" data-speed="0.02"></div>
-    <div class="parallax-layer layer-2" data-speed="0.05"></div>
-    <div class="parallax-layer layer-3" data-speed="0.09"></div>
-    <div class="hero-grain"></div>
+  <!-- LOADING SCREEN -->
+  <div id="loader" aria-hidden="true">
+    <img src="/logo_icon.png" alt="Sarthi Exim India Logo" class="loader-logo">
+    <div class="loader-line"><span></span></div>
   </div>
-  <div class="hero-inner">
-    <p class="eyebrow" data-reveal>MANIFEST NO. 01 — ORIGIN, INDIA</p>
-    <h1 id="hero-headline">Sourced at origin.<br>Trusted at every port.</h1>
-    <p class="hero-sub" data-reveal>Sarthi Exim India ships export-grade chilli, turmeric, pepper, cardamom, garlic and onion from Maharashtra to buyers across the Middle East, Europe, Southeast Asia and beyond — lab-tested, properly documented, and packed to travel.</p>
-    <div class="hero-ctas" data-reveal>
-      <a href="#products" class="btn btn-gold">Explore Products</a>
-      <a href="#rfq" class="btn btn-outline">Request a Quote</a>
-      <a href="#profile" class="btn btn-text">Download Company Profile →</a>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
+  <!-- CUSTOM CURSOR (desktop only, CSS hides on touch) -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- COOKIE CONSENT -->
+  <div id="cookie-banner" role="dialog" aria-label="Cookie notice">
+    <p>This site uses cookies to keep your quote requests and preferences working smoothly. <a href="#"
+        id="cookie-learn">Learn more</a></p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" id="cookie-decline">Decline</button>
+      <button class="btn btn-gold btn-sm" id="cookie-accept">Accept</button>
     </div>
   </div>
-  <a href="#trust" class="hero-scroll" aria-label="Scroll down"><span></span></a>
-</section>
 
-<!-- TRUST STRIP -->
-<section id="trust" class="trust-strip">
-  <div class="trust-track">
-    <div class="trust-track-inner" id="trust-track-inner">
-      <!-- duplicated via JS for seamless loop -->
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section about">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 02 — ABOUT THE HOUSE</p>
-    <h2>A trading house built on the paper trail<br>as much as the produce.</h2>
-  </div>
-  <div class="about-grid">
-    <div class="about-copy" data-reveal>
-      <p>Sarthi Exim India is a merchant-exporter working directly with growers and processing units across India to bring six core spice and produce lines to international buyers. Every consignment moves with full documentation — quality certificates, phytosanitary papers, and commercial invoices — so it clears customs without surprises.</p>
-      <div class="about-cols">
-        <div>
-          <h3>Mission</h3>
-          <p>Give overseas buyers a dependable, well-documented source of Indian spices — the kind of supplier you don't have to double-check.</p>
-        </div>
-        <div>
-          <h3>Vision</h3>
-          <p>To be the first call for B2B spice buyers across the Gulf, Europe and Southeast Asia looking for consistent grade and on-time shipping.</p>
-        </div>
-      </div>
-    </div>
-    <div class="about-timeline" data-reveal>
-      <h3>Company Timeline</h3>
-      <ol class="timeline">
-        <li><span class="t-year">Y1</span><span class="t-text">Founded in Mira Road, Maharashtra, sourcing red chilli and turmeric for domestic trade.</span></li>
-        <li><span class="t-year">Y2</span><span class="t-text">First export consignment cleared IEC and shipped to a Gulf buyer.</span></li>
-        <li><span class="t-year">Y3</span><span class="t-text">Added pepper, cardamom, garlic and onion lines; registered with Spices Board.</span></li>
-        <li><span class="t-year">Y4</span><span class="t-text">Built recurring buyer relationships across multiple export corridors.</span></li>
-        <li><span class="t-year">Today</span><span class="t-text">Operating as a full-line merchant exporter with in-house documentation and QC.</span></li>
-      </ol>
-    </div>
-  </div>
-  <div class="why-choose" data-reveal>
-    <h3>Why buyers choose Sarthi Exim India</h3>
-    <div class="why-grid">
-      <div class="why-card"><span class="why-num">01</span><h4>Lab-tested lots</h4><p>Every batch checked for moisture, purity and pesticide residue before it's packed.</p></div>
-      <div class="why-card"><span class="why-num">02</span><h4>Documentation-first</h4><p>IEC, GST, FSSAI, Spices Board RCMC and FIEO papers ready for every shipment.</p></div>
-      <div class="why-card"><span class="why-num">03</span><h4>Flexible order sizes</h4><p>Sample orders through full container loads (FCL), with MOQ stated upfront per product.</p></div>
-      <div class="why-card"><span class="why-num">04</span><h4>Direct communication</h4><p>One point of contact from quote to bill of lading — no reseller layers.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
-<section id="products" class="section products">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 03 — PRODUCE LINES</p>
-    <h2>Six lines. One quality standard.</h2>
-  </div>
-  <div class="product-grid" id="product-grid"><!-- injected by JS --></div>
-</section>
-
-<!-- PRODUCT DETAIL MODAL -->
-<div id="product-modal" class="modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-panel" role="dialog" aria-modal="true">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <div class="modal-body" id="modal-body"><!-- injected by JS --></div>
-  </div>
-</div>
-
-<!-- COMPANY PROFILE -->
-<section id="profile" class="section profile">
-  <div class="profile-inner">
-    <div class="profile-copy" data-reveal>
-      <p class="eyebrow">MANIFEST NO. 04 — COMPANY PROFILE</p>
-      <h2>Everything a buyer's compliance team asks for, in one PDF.</h2>
-      <p>Our company profile covers registration details, product range, packaging capability, quality process and past export corridors — built for procurement teams who need it on file before the first PO.</p>
-      <a href="#" class="btn btn-gold" id="download-profile">Download Company Profile (PDF)</a>
-    </div>
-    <div class="profile-card" data-reveal aria-hidden="true">
-      <div class="profile-doc">
-        <div class="profile-doc-head">
-          <span>SARTHI EXIM INDIA</span>
-          <span>COMPANY PROFILE</span>
-        </div>
-        <div class="profile-doc-lines">
-          <span></span><span></span><span></span><span class="short"></span>
-          <span></span><span class="short"></span><span></span><span></span>
-        </div>
-        <div class="profile-doc-stamp">VERIFIED<br>EXPORTER</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="section certificates">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 05 — REGISTRATIONS ON FILE</p>
-    <h2>Every number a customs officer or buyer will ask for.</h2>
-  </div>
-  <div class="cert-grid" id="cert-grid"><!-- injected by JS --></div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="section gallery">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 06 — FROM FIELD TO CONTAINER</p>
-    <h2>Gallery</h2>
-  </div>
-  <div class="gallery-tabs" id="gallery-tabs"><!-- injected by JS --></div>
-  <div class="gallery-grid" id="gallery-grid"><!-- injected by JS --></div>
-</section>
-
-<!-- EXPORT PROCESS -->
-<section id="process" class="section process">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 07 — HOW A SHIPMENT MOVES</p>
-    <h2>Export process</h2>
-  </div>
-  <ol class="process-track" id="process-track"><!-- injected by JS --></ol>
-</section>
-
-<!-- GLOBAL PRESENCE -->
-<section id="global" class="section global">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 08 — SHIPPING LEDGER</p>
-    <h2>Where our containers land.</h2>
-  </div>
-  <div class="global-grid">
-    <div class="global-stats" id="global-stats"><!-- injected by JS --></div>
-    <div class="ledger" data-reveal>
-      <div class="ledger-head">
-        <span>ORIGIN</span><span>DESTINATION</span><span>ROUTE</span><span>TRANSIT</span>
-      </div>
-      <div id="ledger-rows"><!-- injected by JS --></div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="section testimonials">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 09 — BUYER NOTES</p>
-    <h2>What buyers say after the first container.</h2>
-  </div>
-  <div class="testi-slider" id="testi-slider">
-    <div class="testi-track" id="testi-track"><!-- injected by JS --></div>
-    <div class="testi-controls">
-      <button id="testi-prev" aria-label="Previous testimonial">←</button>
-      <div class="testi-dots" id="testi-dots"></div>
-      <button id="testi-next" aria-label="Next testimonial">→</button>
-    </div>
-  </div>
-</section>
-
-<!-- RFQ / CONTACT -->
-<section id="rfq" class="section rfq">
-  <div class="section-head">
-    <p class="eyebrow">MANIFEST NO. 10 — REQUEST A QUOTE</p>
-    <h2>Tell us what you need. We'll quote it properly.</h2>
-  </div>
-  <form id="rfq-form" class="rfq-form" novalidate>
-    <!-- FormSubmit Configuration -->
-    <input type="hidden" name="_subject" value="New Quote Request - Sarthi Exim India">
-    <input type="hidden" name="_captcha" value="false">
-    <div class="form-row">
-      <div class="field">
-        <label for="rfq-name">Full name *</label>
-        <input id="rfq-name" name="name" type="text" required>
-        <span class="field-error"></span>
-      </div>
-      <div class="field">
-        <label for="rfq-company">Company *</label>
-        <input id="rfq-company" name="company" type="text" required>
-        <span class="field-error"></span>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="field">
-        <label for="rfq-email">Email *</label>
-        <input id="rfq-email" name="email" type="email" required>
-        <span class="field-error"></span>
-      </div>
-      <div class="field">
-        <label for="rfq-phone">Phone / WhatsApp *</label>
-        <div class="phone-input-group">
-          <select id="rfq-country-code" name="country_code" required>
-            <option value="" disabled selected>Code</option>
-            <option value="+91">India (+91)</option>
-            <option value="+1">United States (+1)</option>
-            <option value="+44">United Kingdom (+44)</option>
-            <option value="+971">UAE (+971)</option>
-            <option disabled>────────────────</option>
-            <option value="+93">Afghanistan (+93)</option>
-            <option value="+355">Albania (+355)</option>
-            <option value="+213">Algeria (+213)</option>
-            <option value="+376">Andorra (+376)</option>
-            <option value="+244">Angola (+244)</option>
-            <option value="+1">Antigua and Barbuda (+1)</option>
-            <option value="+54">Argentina (+54)</option>
-            <option value="+374">Armenia (+374)</option>
-            <option value="+61">Australia (+61)</option>
-            <option value="+43">Austria (+43)</option>
-            <option value="+994">Azerbaijan (+994)</option>
-            <option value="+1">Bahamas (+1)</option>
-            <option value="+973">Bahrain (+973)</option>
-            <option value="+880">Bangladesh (+880)</option>
-            <option value="+1">Barbados (+1)</option>
-            <option value="+375">Belarus (+375)</option>
-            <option value="+32">Belgium (+32)</option>
-            <option value="+501">Belize (+501)</option>
-            <option value="+229">Benin (+229)</option>
-            <option value="+975">Bhutan (+975)</option>
-            <option value="+591">Bolivia (+591)</option>
-            <option value="+387">Bosnia and Herzegovina (+387)</option>
-            <option value="+267">Botswana (+267)</option>
-            <option value="+55">Brazil (+55)</option>
-            <option value="+673">Brunei (+673)</option>
-            <option value="+359">Bulgaria (+359)</option>
-            <option value="+226">Burkina Faso (+226)</option>
-            <option value="+257">Burundi (+257)</option>
-            <option value="+855">Cambodia (+855)</option>
-            <option value="+237">Cameroon (+237)</option>
-            <option value="+1">Canada (+1)</option>
-            <option value="+238">Cape Verde (+238)</option>
-            <option value="+236">Central African Republic (+236)</option>
-            <option value="+235">Chad (+235)</option>
-            <option value="+56">Chile (+56)</option>
-            <option value="+86">China (+86)</option>
-            <option value="+57">Colombia (+57)</option>
-            <option value="+269">Comoros (+269)</option>
-            <option value="+242">Congo (+242)</option>
-            <option value="+506">Costa Rica (+506)</option>
-            <option value="+385">Croatia (+385)</option>
-            <option value="+53">Cuba (+53)</option>
-            <option value="+357">Cyprus (+357)</option>
-            <option value="+420">Czech Republic (+420)</option>
-            <option value="+243">Democratic Republic of the Congo (+243)</option>
-            <option value="+45">Denmark (+45)</option>
-            <option value="+253">Djibouti (+253)</option>
-            <option value="+1">Dominica (+1)</option>
-            <option value="+1">Dominican Republic (+1)</option>
-            <option value="+593">Ecuador (+593)</option>
-            <option value="+20">Egypt (+20)</option>
-            <option value="+503">El Salvador (+503)</option>
-            <option value="+240">Equatorial Guinea (+240)</option>
-            <option value="+291">Eritrea (+291)</option>
-            <option value="+372">Estonia (+372)</option>
-            <option value="+268">Eswatini (+268)</option>
-            <option value="+251">Ethiopia (+251)</option>
-            <option value="+679">Fiji (+679)</option>
-            <option value="+358">Finland (+358)</option>
-            <option value="+33">France (+33)</option>
-            <option value="+241">Gabon (+241)</option>
-            <option value="+220">Gambia (+220)</option>
-            <option value="+995">Georgia (+995)</option>
-            <option value="+49">Germany (+49)</option>
-            <option value="+233">Ghana (+233)</option>
-            <option value="+30">Greece (+30)</option>
-            <option value="+1">Grenada (+1)</option>
-            <option value="+502">Guatemala (+502)</option>
-            <option value="+224">Guinea (+224)</option>
-            <option value="+245">Guinea-Bissau (+245)</option>
-            <option value="+592">Guyana (+592)</option>
-            <option value="+509">Haiti (+509)</option>
-            <option value="+504">Honduras (+504)</option>
-            <option value="+36">Hungary (+36)</option>
-            <option value="+354">Iceland (+354)</option>
-            <option value="+91">India (+91)</option>
-            <option value="+62">Indonesia (+62)</option>
-            <option value="+98">Iran (+98)</option>
-            <option value="+964">Iraq (+964)</option>
-            <option value="+353">Ireland (+353)</option>
-            <option value="+972">Israel (+972)</option>
-            <option value="+39">Italy (+39)</option>
-            <option value="+225">Ivory Coast (+225)</option>
-            <option value="+1">Jamaica (+1)</option>
-            <option value="+81">Japan (+81)</option>
-            <option value="+962">Jordan (+962)</option>
-            <option value="+7">Kazakhstan (+7)</option>
-            <option value="+254">Kenya (+254)</option>
-            <option value="+686">Kiribati (+686)</option>
-            <option value="+965">Kuwait (+965)</option>
-            <option value="+996">Kyrgyzstan (+996)</option>
-            <option value="+856">Laos (+856)</option>
-            <option value="+371">Latvia (+371)</option>
-            <option value="+961">Lebanon (+961)</option>
-            <option value="+266">Lesotho (+266)</option>
-            <option value="+231">Liberia (+231)</option>
-            <option value="+218">Libya (+218)</option>
-            <option value="+423">Liechtenstein (+423)</option>
-            <option value="+370">Lithuania (+370)</option>
-            <option value="+352">Luxembourg (+352)</option>
-            <option value="+261">Madagascar (+261)</option>
-            <option value="+265">Malawi (+265)</option>
-            <option value="+60">Malaysia (+60)</option>
-            <option value="+960">Maldives (+960)</option>
-            <option value="+223">Mali (+223)</option>
-            <option value="+356">Malta (+356)</option>
-            <option value="+692">Marshall Islands (+692)</option>
-            <option value="+222">Mauritania (+222)</option>
-            <option value="+230">Mauritius (+230)</option>
-            <option value="+52">Mexico (+52)</option>
-            <option value="+691">Micronesia (+691)</option>
-            <option value="+373">Moldova (+373)</option>
-            <option value="+377">Monaco (+377)</option>
-            <option value="+976">Mongolia (+976)</option>
-            <option value="+382">Montenegro (+382)</option>
-            <option value="+212">Morocco (+212)</option>
-            <option value="+258">Mozambique (+258)</option>
-            <option value="+95">Myanmar (+95)</option>
-            <option value="+264">Namibia (+264)</option>
-            <option value="+674">Nauru (+674)</option>
-            <option value="+977">Nepal (+977)</option>
-            <option value="+31">Netherlands (+31)</option>
-            <option value="+64">New Zealand (+64)</option>
-            <option value="+505">Nicaragua (+505)</option>
-            <option value="+227">Niger (+227)</option>
-            <option value="+234">Nigeria (+234)</option>
-            <option value="+850">North Korea (+850)</option>
-            <option value="+389">North Macedonia (+389)</option>
-            <option value="+47">Norway (+47)</option>
-            <option value="+968">Oman (+968)</option>
-            <option value="+92">Pakistan (+92)</option>
-            <option value="+680">Palau (+680)</option>
-            <option value="+970">Palestine (+970)</option>
-            <option value="+507">Panama (+507)</option>
-            <option value="+675">Papua New Guinea (+675)</option>
-            <option value="+595">Paraguay (+595)</option>
-            <option value="+51">Peru (+51)</option>
-            <option value="+63">Philippines (+63)</option>
-            <option value="+48">Poland (+48)</option>
-            <option value="+351">Portugal (+351)</option>
-            <option value="+974">Qatar (+974)</option>
-            <option value="+40">Romania (+40)</option>
-            <option value="+7">Russia (+7)</option>
-            <option value="+250">Rwanda (+250)</option>
-            <option value="+1">Saint Kitts and Nevis (+1)</option>
-            <option value="+1">Saint Lucia (+1)</option>
-            <option value="+1">Saint Vincent and the Grenadines (+1)</option>
-            <option value="+685">Samoa (+685)</option>
-            <option value="+378">San Marino (+378)</option>
-            <option value="+239">Sao Tome and Principe (+239)</option>
-            <option value="+966">Saudi Arabia (+966)</option>
-            <option value="+221">Senegal (+221)</option>
-            <option value="+381">Serbia (+381)</option>
-            <option value="+248">Seychelles (+248)</option>
-            <option value="+232">Sierra Leone (+232)</option>
-            <option value="+65">Singapore (+65)</option>
-            <option value="+421">Slovakia (+421)</option>
-            <option value="+386">Slovenia (+386)</option>
-            <option value="+677">Solomon Islands (+677)</option>
-            <option value="+252">Somalia (+252)</option>
-            <option value="+27">South Africa (+27)</option>
-            <option value="+82">South Korea (+82)</option>
-            <option value="+211">South Sudan (+211)</option>
-            <option value="+34">Spain (+34)</option>
-            <option value="+94">Sri Lanka (+94)</option>
-            <option value="+249">Sudan (+249)</option>
-            <option value="+597">Suriname (+597)</option>
-            <option value="+46">Sweden (+46)</option>
-            <option value="+41">Switzerland (+41)</option>
-            <option value="+963">Syria (+963)</option>
-            <option value="+992">Tajikistan (+992)</option>
-            <option value="+255">Tanzania (+255)</option>
-            <option value="+66">Thailand (+66)</option>
-            <option value="+670">Timor-Leste (+670)</option>
-            <option value="+228">Togo (+228)</option>
-            <option value="+676">Tonga (+676)</option>
-            <option value="+1">Trinidad and Tobago (+1)</option>
-            <option value="+216">Tunisia (+216)</option>
-            <option value="+90">Turkey (+90)</option>
-            <option value="+993">Turkmenistan (+993)</option>
-            <option value="+688">Tuvalu (+688)</option>
-            <option value="+256">Uganda (+256)</option>
-            <option value="+380">Ukraine (+380)</option>
-            <option value="+971">United Arab Emirates (+971)</option>
-            <option value="+44">United Kingdom (+44)</option>
-            <option value="+1">United States of America (+1)</option>
-            <option value="+598">Uruguay (+598)</option>
-            <option value="+998">Uzbekistan (+998)</option>
-            <option value="+678">Vanuatu (+678)</option>
-            <option value="+58">Venezuela (+58)</option>
-            <option value="+84">Vietnam (+84)</option>
-            <option value="+967">Yemen (+967)</option>
-            <option value="+260">Zambia (+260)</option>
-            <option value="+263">Zimbabwe (+263)</option>
-          </select>
-          <input id="rfq-phone" name="phone" type="tel" required placeholder="Phone number">
-        </div>
-        <span class="field-error"></span>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="field">
-        <label for="rfq-country">Country *</label>
-        <select id="rfq-country" name="country" required>
-          <option value="" disabled selected>Select country</option>
-          <option value="Afghanistan">Afghanistan</option>
-          <option value="Albania">Albania</option>
-          <option value="Algeria">Algeria</option>
-          <option value="Andorra">Andorra</option>
-          <option value="Angola">Angola</option>
-          <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-          <option value="Argentina">Argentina</option>
-          <option value="Armenia">Armenia</option>
-          <option value="Australia">Australia</option>
-          <option value="Austria">Austria</option>
-          <option value="Azerbaijan">Azerbaijan</option>
-          <option value="Bahamas">Bahamas</option>
-          <option value="Bahrain">Bahrain</option>
-          <option value="Bangladesh">Bangladesh</option>
-          <option value="Barbados">Barbados</option>
-          <option value="Belarus">Belarus</option>
-          <option value="Belgium">Belgium</option>
-          <option value="Belize">Belize</option>
-          <option value="Benin">Benin</option>
-          <option value="Bhutan">Bhutan</option>
-          <option value="Bolivia">Bolivia</option>
-          <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-          <option value="Botswana">Botswana</option>
-          <option value="Brazil">Brazil</option>
-          <option value="Brunei">Brunei</option>
-          <option value="Bulgaria">Bulgaria</option>
-          <option value="Burkina Faso">Burkina Faso</option>
-          <option value="Burundi">Burundi</option>
-          <option value="Cabo Verde">Cabo Verde</option>
-          <option value="Cambodia">Cambodia</option>
-          <option value="Cameroon">Cameroon</option>
-          <option value="Canada">Canada</option>
-          <option value="Central African Republic">Central African Republic</option>
-          <option value="Chad">Chad</option>
-          <option value="Chile">Chile</option>
-          <option value="China">China</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Comoros">Comoros</option>
-          <option value="Congo">Congo</option>
-          <option value="Costa Rica">Costa Rica</option>
-          <option value="Croatia">Croatia</option>
-          <option value="Cuba">Cuba</option>
-          <option value="Cyprus">Cyprus</option>
-          <option value="Czech Republic">Czech Republic</option>
-          <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-          <option value="Denmark">Denmark</option>
-          <option value="Djibouti">Djibouti</option>
-          <option value="Dominica">Dominica</option>
-          <option value="Dominican Republic">Dominican Republic</option>
-          <option value="Ecuador">Ecuador</option>
-          <option value="Egypt">Egypt</option>
-          <option value="El Salvador">El Salvador</option>
-          <option value="Equatorial Guinea">Equatorial Guinea</option>
-          <option value="Eritrea">Eritrea</option>
-          <option value="Estonia">Estonia</option>
-          <option value="Eswatini">Eswatini</option>
-          <option value="Ethiopia">Ethiopia</option>
-          <option value="Fiji">Fiji</option>
-          <option value="Finland">Finland</option>
-          <option value="France">France</option>
-          <option value="Gabon">Gabon</option>
-          <option value="Gambia">Gambia</option>
-          <option value="Georgia">Georgia</option>
-          <option value="Germany">Germany</option>
-          <option value="Ghana">Ghana</option>
-          <option value="Greece">Greece</option>
-          <option value="Grenada">Grenada</option>
-          <option value="Guatemala">Guatemala</option>
-          <option value="Guinea">Guinea</option>
-          <option value="Guinea-Bissau">Guinea-Bissau</option>
-          <option value="Guyana">Guyana</option>
-          <option value="Haiti">Haiti</option>
-          <option value="Honduras">Honduras</option>
-          <option value="Hungary">Hungary</option>
-          <option value="Iceland">Iceland</option>
-          <option value="India">India</option>
-          <option value="Indonesia">Indonesia</option>
-          <option value="Iran">Iran</option>
-          <option value="Iraq">Iraq</option>
-          <option value="Ireland">Ireland</option>
-          <option value="Israel">Israel</option>
-          <option value="Italy">Italy</option>
-          <option value="Ivory Coast">Ivory Coast</option>
-          <option value="Jamaica">Jamaica</option>
-          <option value="Japan">Japan</option>
-          <option value="Jordan">Jordan</option>
-          <option value="Kazakhstan">Kazakhstan</option>
-          <option value="Kenya">Kenya</option>
-          <option value="Kiribati">Kiribati</option>
-          <option value="Kuwait">Kuwait</option>
-          <option value="Kyrgyzstan">Kyrgyzstan</option>
-          <option value="Laos">Laos</option>
-          <option value="Latvia">Latvia</option>
-          <option value="Lebanon">Lebanon</option>
-          <option value="Lesotho">Lesotho</option>
-          <option value="Liberia">Liberia</option>
-          <option value="Libya">Libya</option>
-          <option value="Liechtenstein">Liechtenstein</option>
-          <option value="Lithuania">Lithuania</option>
-          <option value="Luxembourg">Luxembourg</option>
-          <option value="Madagascar">Madagascar</option>
-          <option value="Malawi">Malawi</option>
-          <option value="Malaysia">Malaysia</option>
-          <option value="Maldives">Maldives</option>
-          <option value="Mali">Mali</option>
-          <option value="Malta">Malta</option>
-          <option value="Marshall Islands">Marshall Islands</option>
-          <option value="Mauritania">Mauritania</option>
-          <option value="Mauritius">Mauritius</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Micronesia">Micronesia</option>
-          <option value="Moldova">Moldova</option>
-          <option value="Monaco">Monaco</option>
-          <option value="Mongolia">Mongolia</option>
-          <option value="Montenegro">Montenegro</option>
-          <option value="Morocco">Morocco</option>
-          <option value="Mozambique">Mozambique</option>
-          <option value="Myanmar">Myanmar</option>
-          <option value="Namibia">Namibia</option>
-          <option value="Nauru">Nauru</option>
-          <option value="Nepal">Nepal</option>
-          <option value="Netherlands">Netherlands</option>
-          <option value="New Zealand">New Zealand</option>
-          <option value="Nicaragua">Nicaragua</option>
-          <option value="Niger">Niger</option>
-          <option value="Nigeria">Nigeria</option>
-          <option value="North Korea">North Korea</option>
-          <option value="North Macedonia">North Macedonia</option>
-          <option value="Norway">Norway</option>
-          <option value="Oman">Oman</option>
-          <option value="Pakistan">Pakistan</option>
-          <option value="Palau">Palau</option>
-          <option value="Palestine">Palestine</option>
-          <option value="Panama">Panama</option>
-          <option value="Papua New Guinea">Papua New Guinea</option>
-          <option value="Paraguay">Paraguay</option>
-          <option value="Peru">Peru</option>
-          <option value="Philippines">Philippines</option>
-          <option value="Poland">Poland</option>
-          <option value="Portugal">Portugal</option>
-          <option value="Qatar">Qatar</option>
-          <option value="Romania">Romania</option>
-          <option value="Russia">Russia</option>
-          <option value="Rwanda">Rwanda</option>
-          <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-          <option value="Saint Lucia">Saint Lucia</option>
-          <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-          <option value="Samoa">Samoa</option>
-          <option value="San Marino">San Marino</option>
-          <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-          <option value="Saudi Arabia">Saudi Arabia</option>
-          <option value="Senegal">Senegal</option>
-          <option value="Serbia">Serbia</option>
-          <option value="Seychelles">Seychelles</option>
-          <option value="Sierra Leone">Sierra Leone</option>
-          <option value="Singapore">Singapore</option>
-          <option value="Slovakia">Slovakia</option>
-          <option value="Slovenia">Slovenia</option>
-          <option value="Solomon Islands">Solomon Islands</option>
-          <option value="Somalia">Somalia</option>
-          <option value="South Africa">South Africa</option>
-          <option value="South Korea">South Korea</option>
-          <option value="South Sudan">South Sudan</option>
-          <option value="Spain">Spain</option>
-          <option value="Sri Lanka">Sri Lanka</option>
-          <option value="Sudan">Sudan</option>
-          <option value="Suriname">Suriname</option>
-          <option value="Sweden">Sweden</option>
-          <option value="Switzerland">Switzerland</option>
-          <option value="Syria">Syria</option>
-          <option value="Tajikistan">Tajikistan</option>
-          <option value="Tanzania">Tanzania</option>
-          <option value="Thailand">Thailand</option>
-          <option value="Timor-Leste">Timor-Leste</option>
-          <option value="Togo">Togo</option>
-          <option value="Tonga">Tonga</option>
-          <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-          <option value="Tunisia">Tunisia</option>
-          <option value="Turkey">Turkey</option>
-          <option value="Turkmenistan">Turkmenistan</option>
-          <option value="Tuvalu">Tuvalu</option>
-          <option value="Uganda">Uganda</option>
-          <option value="Ukraine">Ukraine</option>
-          <option value="United Arab Emirates">United Arab Emirates</option>
-          <option value="United Kingdom">United Kingdom</option>
-          <option value="United States of America">United States of America</option>
-          <option value="Uruguay">Uruguay</option>
-          <option value="Uzbekistan">Uzbekistan</option>
-          <option value="Vanuatu">Vanuatu</option>
-          <option value="Venezuela">Venezuela</option>
-          <option value="Vietnam">Vietnam</option>
-          <option value="Yemen">Yemen</option>
-          <option value="Zambia">Zambia</option>
-          <option value="Zimbabwe">Zimbabwe</option>
-        </select>
-        <span class="field-error"></span>
-      </div>
-      <div class="field">
-        <label for="rfq-product">Product</label>
-        <select id="rfq-product" name="product">
-          <option value="">General / bulk inquiry</option>
-          <option>Dry Red Chilli (Teja S17)</option>
-          <option>Turmeric Finger</option>
-          <option>Black Pepper</option>
-          <option>Green Cardamom</option>
-          <option>Garlic</option>
-          <option>Onion</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="field">
-        <label for="rfq-qty">Order quantity</label>
-        <input id="rfq-qty" name="qty" type="text" placeholder="e.g. 1 FCL / 5000 kg">
-      </div>
-      <div class="field">
-        <label for="rfq-file">Attach requirement sheet</label>
-        <input id="rfq-file" name="file" type="file">
-      </div>
-    </div>
-    <div class="field field-full">
-      <label for="rfq-message">Message *</label>
-      <textarea id="rfq-message" name="message" rows="4" required></textarea>
-      <span class="field-error"></span>
-    </div>
-    <label class="field-check">
-      <input type="checkbox" id="rfq-recaptcha-stub"> I confirm I'm not a robot
-    </label>
-    <button type="submit" class="btn btn-gold btn-lg">Submit Request for Quote</button>
-    <p class="form-note">This form is front-end only in this build — see the note in the footer for wiring it to email / CRM.</p>
-  </form>
-
-  <div class="contact-grid">
-    <div class="contact-card" data-reveal>
-      <h3>Direct contact</h3>
-      <ul class="contact-list">
-        <li><strong>Email</strong><span>gaurviverma0108@gmail.com</span></li>
-        <li><strong>Phone</strong><span>+91 97694 96113</span></li>
-        <li><strong>Business hours</strong><span>Mon–Sat, 10:00–19:00 IST</span></li>
-        <li><strong>Address</strong><span>A-704, New Poonam Green, Pleasant Park, Mira Road East, Maharashtra, India</span></li>
-      </ul>
-      <div class="social-row">
-        <a href="#" aria-label="LinkedIn">in</a>
-        <a href="#" aria-label="Instagram">ig</a>
-        <a href="#" aria-label="Facebook">fb</a>
-      </div>
-    </div>
-    <div class="map-card" data-reveal>
-      <iframe title="Sarthi Exim India location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=A-704,+New+Poonam+Green,+Pleasant+Park,+Mira+Road+East,+Maharashtra,+India&output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- THANK YOU OVERLAY -->
-<div id="thankyou" class="modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-panel thankyou-panel" role="dialog" aria-modal="true">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <div class="stamp-anim">CLEARED</div>
-    <h3>Your request has been logged.</h3>
-    <p>A member of our export desk will get back to you within one business day with pricing and lead time.</p>
-    <a href="#home" class="btn btn-gold" data-close>Back to homepage</a>
-  </div>
-</div>
-
-</main>
-
-<!-- FOOTER -->
-<footer id="footer">
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#home" class="brand footer-brand-link">
-        <img src="/logo.png" alt="Sarthi Exim India Logo" class="brand-logo">
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="nav-wrap">
+      <a href="#home" class="brand">
+        <img src="/logo_icon.png" alt="Sarthi Exim India Logo" class="brand-logo">
         <div class="brand-text">
-          <span class="brand-name">Sarthi Exim <em>India</em></span>
-          <span class="brand-slogan">Exporting Excellence, Building Trust</span>
+          <span class="brand-name">SARTHI</span>
+          <span class="brand-slogan">EXIM INDIA</span>
         </div>
       </a>
-      <p style="margin-top: 15px;">Merchant exporter of Indian spices and produce, shipping worldwide from Maharashtra, India.</p>
-      <form class="newsletter" id="newsletter-form">
-        <label for="newsletter-email">Get sourcing updates</label>
-        <div class="newsletter-row">
-          <input id="newsletter-email" type="email" placeholder="you@company.com" required>
-          <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
+      <button id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#profile" class="nav-link">Company Profile</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#global" class="nav-link">Global Reach</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#rfq" class="btn btn-gold btn-sm nav-cta">Request Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" id="hero-parallax" aria-hidden="true">
+        <div class="parallax-layer layer-1" data-speed="0.02"></div>
+        <div class="parallax-layer layer-2" data-speed="0.05"></div>
+        <div class="parallax-layer layer-3" data-speed="0.09"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow" data-reveal>MANIFEST NO. 01 — ORIGIN, INDIA</p>
+        <h1 id="hero-headline">Sourced at origin.<br>Trusted at every port.</h1>
+        <p class="hero-sub" data-reveal>Sarthi Exim India ships export-grade chilli, turmeric, pepper, cardamom, garlic
+          and onion from Maharashtra to buyers across the Middle East, Europe, Southeast Asia and beyond — lab-tested,
+          properly documented, and packed to travel.</p>
+        <div class="hero-ctas" data-reveal>
+          <a href="#products" class="btn btn-gold">Explore Products</a>
+          <a href="#rfq" class="btn btn-outline">Request a Quote</a>
+          <a href="#profile" class="btn btn-text">Download Company Profile →</a>
         </div>
+      </div>
+      <a href="#trust" class="hero-scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section id="trust" class="trust-strip">
+      <div class="trust-track">
+        <div class="trust-track-inner" id="trust-track-inner">
+          <!-- duplicated via JS for seamless loop -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 02 — ABOUT THE HOUSE</p>
+        <h2>A trading house built on the paper trail<br>as much as the produce.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy" data-reveal>
+          <p>Sarthi Exim India is a merchant-exporter working directly with growers and processing units across India to
+            bring six core spice and produce lines to international buyers. Every consignment moves with full
+            documentation — quality certificates, phytosanitary papers, and commercial invoices — so it clears customs
+            without surprises.</p>
+          <div class="about-cols">
+            <div>
+              <h3>Mission</h3>
+              <p>Give overseas buyers a dependable, well-documented source of Indian spices — the kind of supplier you
+                don't have to double-check.</p>
+            </div>
+            <div>
+              <h3>Vision</h3>
+              <p>To be the first call for B2B spice buyers across the Gulf, Europe and Southeast Asia looking for
+                consistent grade and on-time shipping.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-timeline" data-reveal>
+          <h3>Company Timeline</h3>
+          <ol class="timeline">
+            <li><span class="t-year">Y1</span><span class="t-text">Founded in Mira Road, Maharashtra, sourcing red
+                chilli and turmeric for domestic trade.</span></li>
+            <li><span class="t-year">Y2</span><span class="t-text">First export consignment cleared IEC and shipped to a
+                Gulf buyer.</span></li>
+            <li><span class="t-year">Y3</span><span class="t-text">Added pepper, cardamom, garlic and onion lines;
+                registered with Spices Board.</span></li>
+            <li><span class="t-year">Y4</span><span class="t-text">Built recurring buyer relationships across multiple
+                export corridors.</span></li>
+            <li><span class="t-year">Today</span><span class="t-text">Operating as a full-line merchant exporter with
+                in-house documentation and QC.</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="why-choose" data-reveal>
+        <h3>Why buyers choose Sarthi Exim India</h3>
+        <div class="why-grid">
+          <div class="why-card"><span class="why-num">01</span>
+            <h4>Lab-tested lots</h4>
+            <p>Every batch checked for moisture, purity and pesticide residue before it's packed.</p>
+          </div>
+          <div class="why-card"><span class="why-num">02</span>
+            <h4>Documentation-first</h4>
+            <p>IEC, GST, FSSAI, Spices Board RCMC and FIEO papers ready for every shipment.</p>
+          </div>
+          <div class="why-card"><span class="why-num">03</span>
+            <h4>Flexible order sizes</h4>
+            <p>Sample orders through full container loads (FCL), with MOQ stated upfront per product.</p>
+          </div>
+          <div class="why-card"><span class="why-num">04</span>
+            <h4>Direct communication</h4>
+            <p>One point of contact from quote to bill of lading — no reseller layers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section products">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 03 — PRODUCE LINES</p>
+        <h2>Six lines. One quality standard.</h2>
+      </div>
+      <div class="product-grid" id="product-grid"><!-- injected by JS --></div>
+    </section>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="product-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" data-close aria-label="Close">×</button>
+        <div class="modal-body" id="modal-body"><!-- injected by JS --></div>
+      </div>
+    </div>
+
+    <!-- COMPANY PROFILE -->
+    <section id="profile" class="section profile">
+      <div class="profile-inner">
+        <div class="profile-copy" data-reveal>
+          <p class="eyebrow">MANIFEST NO. 04 — COMPANY PROFILE</p>
+          <h2>Everything a buyer's compliance team asks for, in one PDF.</h2>
+          <p>Our company profile covers registration details, product range, packaging capability, quality process and
+            past export corridors — built for procurement teams who need it on file before the first PO.</p>
+          <a href="/company-profile.pdf" download="Sarthi_Exim_India_Company_Profile.pdf" class="btn btn-gold" id="download-profile">Download Company Profile (PDF)</a>
+        </div>
+        <div class="profile-card" data-reveal aria-hidden="true">
+          <div class="profile-doc">
+            <div class="profile-doc-head">
+              <span>SARTHI EXIM INDIA</span>
+              <span>COMPANY PROFILE</span>
+            </div>
+            <div class="profile-doc-lines">
+              <span></span><span></span><span></span><span class="short"></span>
+              <span></span><span class="short"></span><span></span><span></span>
+            </div>
+            <div class="profile-doc-stamp">VERIFIED<br>EXPORTER</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section certificates">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 05 — REGISTRATIONS ON FILE</p>
+        <h2>Every number a customs officer or buyer will ask for.</h2>
+      </div>
+      <div class="cert-grid" id="cert-grid"><!-- injected by JS --></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 06 — FROM FIELD TO CONTAINER</p>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-tabs" id="gallery-tabs"><!-- injected by JS --></div>
+      <div class="gallery-grid" id="gallery-grid"><!-- injected by JS --></div>
+    </section>
+
+    <!-- EXPORT PROCESS -->
+    <section id="process" class="section process">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 07 — HOW A SHIPMENT MOVES</p>
+        <h2>Export process</h2>
+      </div>
+      <ol class="process-track" id="process-track"><!-- injected by JS --></ol>
+    </section>
+
+    <!-- GLOBAL PRESENCE -->
+    <section id="global" class="section global">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 08 — SHIPPING LEDGER</p>
+        <h2>Where our containers land.</h2>
+      </div>
+      <div class="global-grid">
+        <div class="global-stats" id="global-stats"><!-- injected by JS --></div>
+        <div class="ledger" data-reveal>
+          <div class="ledger-head">
+            <span>ORIGIN</span><span>DESTINATION</span><span>ROUTE</span><span>TRANSIT</span>
+          </div>
+          <div id="ledger-rows"><!-- injected by JS --></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section reviews-section">
+      <div class="reviews-head">
+        <p class="reviews-eyebrow">WHAT CLIENTS SAY</p>
+        <h2 class="reviews-title">Trusted by Global Buyers</h2>
+        <span class="reviews-underline"></span>
+      </div>
+      <div class="reviews-grid" id="reviews-grid"><!-- injected by JS --></div>
+    </section>
+
+    <!-- RFQ / CONTACT -->
+    <section id="rfq" class="section rfq">
+      <div class="section-head">
+        <p class="eyebrow">MANIFEST NO. 10 — REQUEST A QUOTE</p>
+        <h2>Tell us what you need. We'll quote it properly.</h2>
+      </div>
+      <form id="rfq-form" class="rfq-form" novalidate>
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" value="New Quote Request - Sarthi Exim India">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div class="field">
+            <label for="rfq-name">Full name *</label>
+            <input id="rfq-name" name="name" type="text" required>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="rfq-company">Company *</label>
+            <input id="rfq-company" name="company" type="text" required>
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rfq-email">Email *</label>
+            <input id="rfq-email" name="email" type="email" required>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="rfq-phone">Phone / WhatsApp *</label>
+            <div class="phone-input-group">
+              <select id="rfq-country-code" name="country_code" required>
+                <option value="" disabled selected>Code</option>
+                <option value="+91">India (+91)</option>
+                <option value="+1">United States (+1)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+971">UAE (+971)</option>
+                <option disabled>────────────────</option>
+                <option value="+93">Afghanistan (+93)</option>
+                <option value="+355">Albania (+355)</option>
+                <option value="+213">Algeria (+213)</option>
+                <option value="+376">Andorra (+376)</option>
+                <option value="+244">Angola (+244)</option>
+                <option value="+1">Antigua and Barbuda (+1)</option>
+                <option value="+54">Argentina (+54)</option>
+                <option value="+374">Armenia (+374)</option>
+                <option value="+61">Australia (+61)</option>
+                <option value="+43">Austria (+43)</option>
+                <option value="+994">Azerbaijan (+994)</option>
+                <option value="+1">Bahamas (+1)</option>
+                <option value="+973">Bahrain (+973)</option>
+                <option value="+880">Bangladesh (+880)</option>
+                <option value="+1">Barbados (+1)</option>
+                <option value="+375">Belarus (+375)</option>
+                <option value="+32">Belgium (+32)</option>
+                <option value="+501">Belize (+501)</option>
+                <option value="+229">Benin (+229)</option>
+                <option value="+975">Bhutan (+975)</option>
+                <option value="+591">Bolivia (+591)</option>
+                <option value="+387">Bosnia and Herzegovina (+387)</option>
+                <option value="+267">Botswana (+267)</option>
+                <option value="+55">Brazil (+55)</option>
+                <option value="+673">Brunei (+673)</option>
+                <option value="+359">Bulgaria (+359)</option>
+                <option value="+226">Burkina Faso (+226)</option>
+                <option value="+257">Burundi (+257)</option>
+                <option value="+855">Cambodia (+855)</option>
+                <option value="+237">Cameroon (+237)</option>
+                <option value="+1">Canada (+1)</option>
+                <option value="+238">Cape Verde (+238)</option>
+                <option value="+236">Central African Republic (+236)</option>
+                <option value="+235">Chad (+235)</option>
+                <option value="+56">Chile (+56)</option>
+                <option value="+86">China (+86)</option>
+                <option value="+57">Colombia (+57)</option>
+                <option value="+269">Comoros (+269)</option>
+                <option value="+242">Congo (+242)</option>
+                <option value="+506">Costa Rica (+506)</option>
+                <option value="+385">Croatia (+385)</option>
+                <option value="+53">Cuba (+53)</option>
+                <option value="+357">Cyprus (+357)</option>
+                <option value="+420">Czech Republic (+420)</option>
+                <option value="+243">Democratic Republic of the Congo (+243)</option>
+                <option value="+45">Denmark (+45)</option>
+                <option value="+253">Djibouti (+253)</option>
+                <option value="+1">Dominica (+1)</option>
+                <option value="+1">Dominican Republic (+1)</option>
+                <option value="+593">Ecuador (+593)</option>
+                <option value="+20">Egypt (+20)</option>
+                <option value="+503">El Salvador (+503)</option>
+                <option value="+240">Equatorial Guinea (+240)</option>
+                <option value="+291">Eritrea (+291)</option>
+                <option value="+372">Estonia (+372)</option>
+                <option value="+268">Eswatini (+268)</option>
+                <option value="+251">Ethiopia (+251)</option>
+                <option value="+679">Fiji (+679)</option>
+                <option value="+358">Finland (+358)</option>
+                <option value="+33">France (+33)</option>
+                <option value="+241">Gabon (+241)</option>
+                <option value="+220">Gambia (+220)</option>
+                <option value="+995">Georgia (+995)</option>
+                <option value="+49">Germany (+49)</option>
+                <option value="+233">Ghana (+233)</option>
+                <option value="+30">Greece (+30)</option>
+                <option value="+1">Grenada (+1)</option>
+                <option value="+502">Guatemala (+502)</option>
+                <option value="+224">Guinea (+224)</option>
+                <option value="+245">Guinea-Bissau (+245)</option>
+                <option value="+592">Guyana (+592)</option>
+                <option value="+509">Haiti (+509)</option>
+                <option value="+504">Honduras (+504)</option>
+                <option value="+36">Hungary (+36)</option>
+                <option value="+354">Iceland (+354)</option>
+                <option value="+91">India (+91)</option>
+                <option value="+62">Indonesia (+62)</option>
+                <option value="+98">Iran (+98)</option>
+                <option value="+964">Iraq (+964)</option>
+                <option value="+353">Ireland (+353)</option>
+                <option value="+972">Israel (+972)</option>
+                <option value="+39">Italy (+39)</option>
+                <option value="+225">Ivory Coast (+225)</option>
+                <option value="+1">Jamaica (+1)</option>
+                <option value="+81">Japan (+81)</option>
+                <option value="+962">Jordan (+962)</option>
+                <option value="+7">Kazakhstan (+7)</option>
+                <option value="+254">Kenya (+254)</option>
+                <option value="+686">Kiribati (+686)</option>
+                <option value="+965">Kuwait (+965)</option>
+                <option value="+996">Kyrgyzstan (+996)</option>
+                <option value="+856">Laos (+856)</option>
+                <option value="+371">Latvia (+371)</option>
+                <option value="+961">Lebanon (+961)</option>
+                <option value="+266">Lesotho (+266)</option>
+                <option value="+231">Liberia (+231)</option>
+                <option value="+218">Libya (+218)</option>
+                <option value="+423">Liechtenstein (+423)</option>
+                <option value="+370">Lithuania (+370)</option>
+                <option value="+352">Luxembourg (+352)</option>
+                <option value="+261">Madagascar (+261)</option>
+                <option value="+265">Malawi (+265)</option>
+                <option value="+60">Malaysia (+60)</option>
+                <option value="+960">Maldives (+960)</option>
+                <option value="+223">Mali (+223)</option>
+                <option value="+356">Malta (+356)</option>
+                <option value="+692">Marshall Islands (+692)</option>
+                <option value="+222">Mauritania (+222)</option>
+                <option value="+230">Mauritius (+230)</option>
+                <option value="+52">Mexico (+52)</option>
+                <option value="+691">Micronesia (+691)</option>
+                <option value="+373">Moldova (+373)</option>
+                <option value="+377">Monaco (+377)</option>
+                <option value="+976">Mongolia (+976)</option>
+                <option value="+382">Montenegro (+382)</option>
+                <option value="+212">Morocco (+212)</option>
+                <option value="+258">Mozambique (+258)</option>
+                <option value="+95">Myanmar (+95)</option>
+                <option value="+264">Namibia (+264)</option>
+                <option value="+674">Nauru (+674)</option>
+                <option value="+977">Nepal (+977)</option>
+                <option value="+31">Netherlands (+31)</option>
+                <option value="+64">New Zealand (+64)</option>
+                <option value="+505">Nicaragua (+505)</option>
+                <option value="+227">Niger (+227)</option>
+                <option value="+234">Nigeria (+234)</option>
+                <option value="+850">North Korea (+850)</option>
+                <option value="+389">North Macedonia (+389)</option>
+                <option value="+47">Norway (+47)</option>
+                <option value="+968">Oman (+968)</option>
+                <option value="+92">Pakistan (+92)</option>
+                <option value="+680">Palau (+680)</option>
+                <option value="+970">Palestine (+970)</option>
+                <option value="+507">Panama (+507)</option>
+                <option value="+675">Papua New Guinea (+675)</option>
+                <option value="+595">Paraguay (+595)</option>
+                <option value="+51">Peru (+51)</option>
+                <option value="+63">Philippines (+63)</option>
+                <option value="+48">Poland (+48)</option>
+                <option value="+351">Portugal (+351)</option>
+                <option value="+974">Qatar (+974)</option>
+                <option value="+40">Romania (+40)</option>
+                <option value="+7">Russia (+7)</option>
+                <option value="+250">Rwanda (+250)</option>
+                <option value="+1">Saint Kitts and Nevis (+1)</option>
+                <option value="+1">Saint Lucia (+1)</option>
+                <option value="+1">Saint Vincent and the Grenadines (+1)</option>
+                <option value="+685">Samoa (+685)</option>
+                <option value="+378">San Marino (+378)</option>
+                <option value="+239">Sao Tome and Principe (+239)</option>
+                <option value="+966">Saudi Arabia (+966)</option>
+                <option value="+221">Senegal (+221)</option>
+                <option value="+381">Serbia (+381)</option>
+                <option value="+248">Seychelles (+248)</option>
+                <option value="+232">Sierra Leone (+232)</option>
+                <option value="+65">Singapore (+65)</option>
+                <option value="+421">Slovakia (+421)</option>
+                <option value="+386">Slovenia (+386)</option>
+                <option value="+677">Solomon Islands (+677)</option>
+                <option value="+252">Somalia (+252)</option>
+                <option value="+27">South Africa (+27)</option>
+                <option value="+82">South Korea (+82)</option>
+                <option value="+211">South Sudan (+211)</option>
+                <option value="+34">Spain (+34)</option>
+                <option value="+94">Sri Lanka (+94)</option>
+                <option value="+249">Sudan (+249)</option>
+                <option value="+597">Suriname (+597)</option>
+                <option value="+46">Sweden (+46)</option>
+                <option value="+41">Switzerland (+41)</option>
+                <option value="+963">Syria (+963)</option>
+                <option value="+992">Tajikistan (+992)</option>
+                <option value="+255">Tanzania (+255)</option>
+                <option value="+66">Thailand (+66)</option>
+                <option value="+670">Timor-Leste (+670)</option>
+                <option value="+228">Togo (+228)</option>
+                <option value="+676">Tonga (+676)</option>
+                <option value="+1">Trinidad and Tobago (+1)</option>
+                <option value="+216">Tunisia (+216)</option>
+                <option value="+90">Turkey (+90)</option>
+                <option value="+993">Turkmenistan (+993)</option>
+                <option value="+688">Tuvalu (+688)</option>
+                <option value="+256">Uganda (+256)</option>
+                <option value="+380">Ukraine (+380)</option>
+                <option value="+971">United Arab Emirates (+971)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+1">United States of America (+1)</option>
+                <option value="+598">Uruguay (+598)</option>
+                <option value="+998">Uzbekistan (+998)</option>
+                <option value="+678">Vanuatu (+678)</option>
+                <option value="+58">Venezuela (+58)</option>
+                <option value="+84">Vietnam (+84)</option>
+                <option value="+967">Yemen (+967)</option>
+                <option value="+260">Zambia (+260)</option>
+                <option value="+263">Zimbabwe (+263)</option>
+              </select>
+              <input id="rfq-phone" name="phone" type="tel" required placeholder="Phone number">
+            </div>
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rfq-country">Country *</label>
+            <select id="rfq-country" name="country" required>
+              <option value="" disabled selected>Select country</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+              <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Bahamas">Bahamas</option>
+              <option value="Bahrain">Bahrain</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="Barbados">Barbados</option>
+              <option value="Belarus">Belarus</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Belize">Belize</option>
+              <option value="Benin">Benin</option>
+              <option value="Bhutan">Bhutan</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+              <option value="Botswana">Botswana</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Brunei">Brunei</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Burundi">Burundi</option>
+              <option value="Cabo Verde">Cabo Verde</option>
+              <option value="Cambodia">Cambodia</option>
+              <option value="Cameroon">Cameroon</option>
+              <option value="Canada">Canada</option>
+              <option value="Central African Republic">Central African Republic</option>
+              <option value="Chad">Chad</option>
+              <option value="Chile">Chile</option>
+              <option value="China">China</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Comoros">Comoros</option>
+              <option value="Congo">Congo</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Croatia">Croatia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Cyprus">Cyprus</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Djibouti">Djibouti</option>
+              <option value="Dominica">Dominica</option>
+              <option value="Dominican Republic">Dominican Republic</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="Egypt">Egypt</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Equatorial Guinea">Equatorial Guinea</option>
+              <option value="Eritrea">Eritrea</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Eswatini">Eswatini</option>
+              <option value="Ethiopia">Ethiopia</option>
+              <option value="Fiji">Fiji</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Gabon">Gabon</option>
+              <option value="Gambia">Gambia</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Germany">Germany</option>
+              <option value="Ghana">Ghana</option>
+              <option value="Greece">Greece</option>
+              <option value="Grenada">Grenada</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Guinea">Guinea</option>
+              <option value="Guinea-Bissau">Guinea-Bissau</option>
+              <option value="Guyana">Guyana</option>
+              <option value="Haiti">Haiti</option>
+              <option value="Honduras">Honduras</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="India">India</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Iran">Iran</option>
+              <option value="Iraq">Iraq</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Ivory Coast">Ivory Coast</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japan">Japan</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Kiribati">Kiribati</option>
+              <option value="Kuwait">Kuwait</option>
+              <option value="Kyrgyzstan">Kyrgyzstan</option>
+              <option value="Laos">Laos</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lebanon">Lebanon</option>
+              <option value="Lesotho">Lesotho</option>
+              <option value="Liberia">Liberia</option>
+              <option value="Libya">Libya</option>
+              <option value="Liechtenstein">Liechtenstein</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Madagascar">Madagascar</option>
+              <option value="Malawi">Malawi</option>
+              <option value="Malaysia">Malaysia</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Mali">Mali</option>
+              <option value="Malta">Malta</option>
+              <option value="Marshall Islands">Marshall Islands</option>
+              <option value="Mauritania">Mauritania</option>
+              <option value="Mauritius">Mauritius</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Micronesia">Micronesia</option>
+              <option value="Moldova">Moldova</option>
+              <option value="Monaco">Monaco</option>
+              <option value="Mongolia">Mongolia</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="Morocco">Morocco</option>
+              <option value="Mozambique">Mozambique</option>
+              <option value="Myanmar">Myanmar</option>
+              <option value="Namibia">Namibia</option>
+              <option value="Nauru">Nauru</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Niger">Niger</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="North Korea">North Korea</option>
+              <option value="North Macedonia">North Macedonia</option>
+              <option value="Norway">Norway</option>
+              <option value="Oman">Oman</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="Palau">Palau</option>
+              <option value="Palestine">Palestine</option>
+              <option value="Panama">Panama</option>
+              <option value="Papua New Guinea">Papua New Guinea</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Peru">Peru</option>
+              <option value="Philippines">Philippines</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Romania">Romania</option>
+              <option value="Russia">Russia</option>
+              <option value="Rwanda">Rwanda</option>
+              <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+              <option value="Saint Lucia">Saint Lucia</option>
+              <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+              <option value="Samoa">Samoa</option>
+              <option value="San Marino">San Marino</option>
+              <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+              <option value="Senegal">Senegal</option>
+              <option value="Serbia">Serbia</option>
+              <option value="Seychelles">Seychelles</option>
+              <option value="Sierra Leone">Sierra Leone</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Solomon Islands">Solomon Islands</option>
+              <option value="Somalia">Somalia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="South Korea">South Korea</option>
+              <option value="South Sudan">South Sudan</option>
+              <option value="Spain">Spain</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="Sudan">Sudan</option>
+              <option value="Suriname">Suriname</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Syria">Syria</option>
+              <option value="Tajikistan">Tajikistan</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Thailand">Thailand</option>
+              <option value="Timor-Leste">Timor-Leste</option>
+              <option value="Togo">Togo</option>
+              <option value="Tonga">Tonga</option>
+              <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+              <option value="Tunisia">Tunisia</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Turkmenistan">Turkmenistan</option>
+              <option value="Tuvalu">Tuvalu</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States of America">United States of America</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Uzbekistan">Uzbekistan</option>
+              <option value="Vanuatu">Vanuatu</option>
+              <option value="Venezuela">Venezuela</option>
+              <option value="Vietnam">Vietnam</option>
+              <option value="Yemen">Yemen</option>
+              <option value="Zambia">Zambia</option>
+              <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="rfq-product">Product</label>
+            <select id="rfq-product" name="product">
+              <option value="">General / bulk inquiry</option>
+              <option>Dry Red Chilli (Teja S17)</option>
+              <option>Turmeric Finger</option>
+              <option>Black Pepper</option>
+              <option>Green Cardamom</option>
+              <option>Garlic</option>
+              <option>Onion</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="rfq-qty">Order quantity</label>
+            <input id="rfq-qty" name="qty" type="text" placeholder="e.g. 1 FCL / 5000 kg">
+          </div>
+          <div class="field">
+            <label for="rfq-file">Attach requirement sheet</label>
+            <input id="rfq-file" name="file" type="file">
+          </div>
+        </div>
+        <div class="field field-full">
+          <label for="rfq-message">Message *</label>
+          <textarea id="rfq-message" name="message" rows="4" required></textarea>
+          <span class="field-error"></span>
+        </div>
+        <label class="field-check">
+          <input type="checkbox" id="rfq-recaptcha-stub"> I confirm I'm not a robot
+        </label>
+        <button type="submit" class="btn btn-gold btn-lg">Submit Request for Quote</button>
+        <p class="form-note">This form is front-end only in this build — see the note in the footer for wiring it to
+          email / CRM.</p>
       </form>
-    </div>
-    <div class="footer-cols">
-      <div>
-        <h4>Company</h4>
-        <a href="#about">About</a>
-        <a href="#profile">Company Profile</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div>
-        <h4>Trade</h4>
-        <a href="#products">Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#process">Export Process</a>
-        <a href="#rfq">Request a Quote</a>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-bottom-left">
-      <p>© <span id="year"></span> Sarthi Exim India. All rights reserved.</p>
-      <p class="build-note">Front-end build — payment gateway, RFQ backend and CMS wiring covered separately.</p>
-    </div>
-    <div class="footer-social" style="display: flex; gap: 16px; align-items: center; justify-content: flex-end;">
-      <a href="https://www.facebook.com/share/1M75NZaTQd/" target="_blank" rel="noopener" aria-label="Facebook" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
-      <a href="https://www.instagram.com/sarthi_exim_india?igsh=MXJlbHlhcGY5cXZyZw==" target="_blank" rel="noopener" aria-label="Instagram" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25zM12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
-      <a href="https://www.linkedin.com/in/sagar-waghela-a94268389?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
-      <a href="https://wa.me/919769496113" target="_blank" rel="noopener" aria-label="WhatsApp" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg></a>
-      <a href="https://www.indiamart.com/sarthithane-maharashtra/" target="_blank" rel="noopener" aria-label="IndiaMart" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-10-2h4v2h-4V4zm10 15H4V8h16v11z"/></svg></a>
-    </div>
-  </div>
-</footer>
 
-<!-- FLOATING WHATSAPP -->
-<a id="whatsapp-float" href="https://wa.me/919769496113?text=Hello%20Sarthi%20Exim%20India%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20your%20quotation." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-    <path d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
-  </svg>
-</a>
+      <div class="contact-grid" id="contact">
+        <div class="contact-card" data-reveal>
+          <h3>Direct contact</h3>
+          <ul class="contact-list">
+            <li><strong>Email</strong><span>sales@sarthigroups.com</span></li>
+            <li><strong>Phone</strong><span>+91 97694 96113</span></li>
+            <li><strong>Business hours</strong><span>Mon–Sat, 10:00–19:00 IST</span></li>
+            <li><strong>Address</strong><span>A-704, New Poonam Green, Pleasant Park, Mira Road East, Maharashtra,
+                India</span></li>
+          </ul>
+          <div class="social-row">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Facebook">fb</a>
+          </div>
+        </div>
+        <div class="map-card" data-reveal>
+          <iframe title="Sarthi Exim India location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=A-704,+New+Poonam+Green,+Pleasant+Park,+Mira+Road+East,+Maharashtra,+India&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
 
-<!-- BACK TO TOP -->
-<button id="back-to-top" aria-label="Back to top">↑</button>
+    <!-- THANK YOU OVERLAY -->
+    <div id="thankyou" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel thankyou-panel" role="dialog" aria-modal="true">
+        <button class="modal-close" data-close aria-label="Close">×</button>
+        <div class="stamp-anim">CLEARED</div>
+        <h3>Your request has been logged.</h3>
+        <p>A member of our export desk will get back to you within one business day with pricing and lead time.</p>
+        <a href="#home" class="btn btn-gold" data-close>Back to homepage</a>
+      </div>
+    </div>
 
-<script type="module" src="/src/app.js"></script>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="brand footer-brand-link">
+          <img src="/logo_icon.png" alt="Sarthi Exim India Logo" class="brand-logo">
+          <div class="brand-text">
+            <span class="brand-name">SARTHI</span>
+            <span class="brand-slogan">EXIM INDIA</span>
+          </div>
+        </a>
+        <p style="margin-top: 15px;">Merchant exporter of Indian spices and produce, shipping worldwide from
+          Maharashtra, India.</p>
+        <form class="newsletter" id="newsletter-form">
+          <label for="newsletter-email">Get sourcing updates</label>
+          <div class="newsletter-row">
+            <input id="newsletter-email" type="email" placeholder="you@company.com" required>
+            <button type="submit" class="btn btn-gold btn-sm">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#profile">Company Profile</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Trade</h4>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#process">Export Process</a>
+          <a href="#rfq">Request a Quote</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>© <span id="year"></span> Sarthi Exim India. All rights reserved.</p>
+        <p class="build-note">Front-end build — payment gateway, RFQ backend and CMS wiring covered separately.</p>
+      </div>
+      <div class="footer-social" style="display: flex; gap: 16px; align-items: center; justify-content: flex-end;">
+        <a href="https://www.facebook.com/share/1M75NZaTQd/" target="_blank" rel="noopener" aria-label="Facebook"
+          style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" />
+          </svg></a>
+        <a href="https://www.instagram.com/sarthi_exim_india?igsh=MXJlbHlhcGY5cXZyZw==" target="_blank" rel="noopener"
+          aria-label="Instagram" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25zM12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/sagar-waghela-a94268389?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank" rel="noopener" aria-label="LinkedIn"
+          style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+          </svg></a>
+        <a href="https://wa.me/919769496113" target="_blank" rel="noopener" aria-label="WhatsApp"
+          style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22" viewBox="0 0 32 32"
+            fill="currentColor">
+            <path
+              d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
+          </svg></a>
+        <a href="https://www.indiamart.com/sarthithane-maharashtra/" target="_blank" rel="noopener"
+          aria-label="IndiaMart" style="color: var(--paper-70); transition: color 0.3s;"><svg width="22" height="22"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-10-2h4v2h-4V4zm10 15H4V8h16v11z" />
+          </svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a id="whatsapp-float"
+    href="https://wa.me/919769496113?text=Hello%20Sarthi%20Exim%20India%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20your%20quotation."
+    target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
+      <path
+        d="M16.04 3C9.37 3 3.96 8.4 3.96 15.06c0 2.23.6 4.4 1.75 6.3L3 29l7.82-2.65a12.1 12.1 0 0 0 5.22 1.2h.01c6.67 0 12.08-5.4 12.08-12.06C28.13 8.4 22.72 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-5.1-1.4l-.37-.22-4.64 1.57 1.55-4.52-.24-.38a9.9 9.9 0 0 1-1.53-5.3c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.93 7.05c0 5.5-4.48 9.98-9.66 9.98zm5.47-7.47c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.24-.46-2.37-1.46-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
+    </svg>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script type="module" src="/src/app.js"></script>
 </body>
+
 </html>
