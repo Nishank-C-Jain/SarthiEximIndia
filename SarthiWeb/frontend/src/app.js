@@ -232,9 +232,30 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const TESTIMONIALS = [
-    { quote:"Documentation was clean and the chilli grade matched the sample exactly — made customs clearance painless on our end.", who:"Procurement Manager, Foodstuff Trading Co.", flag:"🇦🇪" },
-    { quote:"We've reordered turmeric three seasons running. Consistent moisture content and on-time loading every time.", who:"Buyer, Spice Import House", flag:"🇬🇧" },
-    { quote:"Good communication throughout — from RFQ to bill of lading, we always knew where the container stood.", who:"Director, General Trading LLC", flag:"🇸🇦" },
+    { 
+      quote: "Documentation was clean and the chilli grade matched the sample exactly — made customs clearance painless on our end.", 
+      name: "Ahmed Ali", 
+      company: "Al Noor Trading LLC – Dubai", 
+      country: "UAE",
+      flag: "🇦🇪",
+      color: "#C6A15B"
+    },
+    { 
+      quote: "We've reordered turmeric three seasons running. Consistent moisture content and on-time loading every time.", 
+      name: "Sarah Jenkins", 
+      company: "Spice Import House – London", 
+      country: "UK",
+      flag: "🇬🇧",
+      color: "#5BA88C"
+    },
+    { 
+      quote: "Good communication throughout — from RFQ to bill of lading, we always knew where the container stood.", 
+      name: "Fahad Al-Otaibi", 
+      company: "General Trading LLC – Riyadh", 
+      country: "Saudi Arabia",
+      flag: "🇸🇦",
+      color: "#5B8DC6"
+    },
   ];
 
   /* ---------- TRUST STRIP ---------- */
@@ -384,27 +405,25 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("ledger-rows").innerHTML = ROUTES.map(r => `
     <div class="ledger-row"><span>${r.from}</span><span>${r.to}</span><span>${r.route}</span><span>${r.transit}</span></div>`).join("");
 
-  /* ---------- TESTIMONIALS SLIDER ---------- */
-  const testiTrack = document.getElementById("testi-track");
-  const testiDots = document.getElementById("testi-dots");
-  testiTrack.innerHTML = TESTIMONIALS.map(t => `
-    <div class="testi-card">
-      <p class="testi-quote">"${t.quote}"</p>
-      <div class="testi-who"><span class="testi-flag">${t.flag}</span><span>${t.who}</span></div>
-    </div>`).join("");
-  testiDots.innerHTML = TESTIMONIALS.map((_,i) => `<span class="${i===0?'active':''}" data-i="${i}"></span>`).join("");
-  let testiIndex = 0;
-  function goTesti(i) {
-    testiIndex = (i + TESTIMONIALS.length) % TESTIMONIALS.length;
-    testiTrack.style.transform = `translateX(-${testiIndex * 100}%)`;
-    testiDots.querySelectorAll("span").forEach((d,j) => d.classList.toggle("active", j === testiIndex));
-  }
-  document.getElementById("testi-prev").addEventListener("click", () => goTesti(testiIndex - 1));
-  document.getElementById("testi-next").addEventListener("click", () => goTesti(testiIndex + 1));
-  testiDots.addEventListener("click", (e) => { const d = e.target.closest("span"); if (d) goTesti(parseInt(d.dataset.i,10)); });
-  let testiTimer = setInterval(() => goTesti(testiIndex + 1), 6000);
-  document.getElementById("testi-slider").addEventListener("mouseenter", () => clearInterval(testiTimer));
-  document.getElementById("testi-slider").addEventListener("mouseleave", () => { testiTimer = setInterval(() => goTesti(testiIndex + 1), 6000); });
+  /* ---------- REVIEWS CARD GRID ---------- */
+  const reviewsGrid = document.getElementById("reviews-grid");
+  reviewsGrid.innerHTML = TESTIMONIALS.map(t => {
+    const initial = t.name.charAt(0).toUpperCase();
+    return `
+    <div class="review-card">
+      <div class="review-quote-icon">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">${t.quote}</p>
+      <div class="review-author">
+        <div class="review-avatar" style="background:${t.color}">${initial}</div>
+        <div class="review-author-info">
+          <strong class="review-author-name">${t.name}</strong>
+          <span class="review-author-role">${t.company}</span>
+          <span class="review-author-country">${t.flag} ${t.country}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
 
   /* ---------- RFQ FORM VALIDATION + SUBMIT ---------- */
   const rfqForm = document.getElementById("rfq-form");
@@ -478,10 +497,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ---------- DOWNLOAD PROFILE / SPEC STUBS ---------- */
-  document.getElementById("download-profile").addEventListener("click", (e) => {
-    e.preventDefault();
-    alert("Hook this button up to your hosted Company Profile PDF (e.g. /files/company-profile.pdf).");
-  });
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-download-spec]")) {
       e.preventDefault();
